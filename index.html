@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="icon" href="img/favicon.png" type="image/png" />
-  <title>Hannah Yan's Portfolio</title>
+  <title>John Loper's Portfolio</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="vendors/linericon/style.css" />
@@ -27,7 +27,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand" href="index-2.html"><img src="img/H-logo.png" width=80px alt="" /></a>
+          <a class="navbar-brand" href="index.html"><img src="img/header-pic.png" width=80px alt=""/></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
@@ -37,9 +37,6 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
-              <li class="nav-item active">
-                <a class="nav-link" href="index-2.html">Home</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#abt-me">About</a>
               </li>
@@ -72,8 +69,10 @@
         <div class="col-lg-10">
           <div class="projects_fillter">
             <ul class="filter list">
-              <li class="active" data-filter=".viz">Data Visualization</li>
-              <li data-filter=".ccode">Skills</li>
+              <li class="active" data-filter=".all">All</li>
+              <li data-filter=".viz">Data Visualization</li>
+              <li data-filter=".webdev">Web Development</li>
+              <li data-filter=".skills">Skills</li>
             </ul>
           </div>
         </div>
@@ -81,347 +80,220 @@
       <div class="projects_inner row grid">
         <div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
         
-        <div class="col-lg-3 col-sm-6 col-sm-12 viz grid-item">
+        <div class="col-lg-3 col-sm-6 viz webdev all grid-item">
             <div class="projects_item">
               <img class="img-fluid w-100" src="img/gallery/covid.png" alt="" />
               <div class="projects_text">
                 <a href="http://covid2019tracker.appspot.com/">
-                  <h4>COVID-19</h4>
+                  <h4>COVID-19 Tracker</h4>
                 </a>
-                <p>Live tracker for visualizing the COVID-19 outbreak.</p>
+                <a href="https://github.com/L0per/wuhan-coronavirus">
+                  <p>Github</p>
+                </a>
               </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6 col-sm-12 viz grid-item">
+        <div class="col-lg-3 col-sm-6 viz webdev all grid-item">
           <div class="projects_item">
             <img class="img-fluid w-100" src="img/gallery/primary.png" alt="" />
             <div class="projects_text">
               <a href="https://primary-predictions2020.appspot.com/">
                 <h4>2020 Democratic Primary Predictions</h4>
               </a>
-              <p>Using machine learning for county-level election predictions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 work grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/happiness2.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/in-pursuit-of-happiness-part-ii-e471a54f294e">
-                <h4>Happiness by Regions</h4>
+              <a href="https://github.com/L0per/democratic-primary-predictions">
+                <p>Github</p>
               </a>
-              <p>(Made in Tableau, 2017)</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
+
+        <div class="col-lg-3 col-sm-6 viz all grid-item">
           <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/meteorites.png" alt="" />
+            <img class="img-fluid w-100" src="img/gallery/sac_budget_treemap.PNG" alt="" />
             <div class="projects_text">
-              <a href="https://medium.com/towards-data-science/getting-to-know-the-meteorites-ef4a6a04290c">
-                <h4>Getting to Know the Meterorites</h4>
+              <a href="https://l0per.github.io/sac-budget-treemap-2018/">
+                <h4>City of Sacramento Budget</h4>
               </a>
-              <p>(Made in Tableau, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/flight.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/when-flying-gets-dangerous-part-2-c67b90371ffc">
-                <h4>When Flying Gets Dangerous</h4>
+              <a href="https://github.com/L0per/sac-budget-treemap-2018">
+                <p>Github</p>
               </a>
-              <p>(Made in R, 2017)</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
+
+        <div class="col-lg-3 col-sm-6 viz all grid-item">
           <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/moma.png" alt="" />
+            <img class="img-fluid w-100" src="img/gallery/earthquake.png" alt="" />
             <div class="projects_text">
-              <a href="https://medium.com/towards-data-science/moma-and-its-artwork-in-data-60925c8acb7a">
-                <h4>MOMA and its Artworks in Data</h4>
+              <a href="https://l0per.github.io/earthquake-map/">
+                <h4>Earthquake Map</h4>
               </a>
-              <p>(Made in R, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/bike.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/visualizing-bike-routes-1ce455643db9">
-                <h4>SF Bike Traffic</h4>
+              <a href="https://github.com/L0per/earthquake-map">
+                <p>Github</p>
               </a>
-              <p>(Made in R, 2017)</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
+
+        <div class="col-lg-3 col-sm-6 viz all grid-item">
           <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/missingmigrant.png" alt="" />
+            <img class="img-fluid w-100" src="img/gallery/citibike.png" alt="" />
             <div class="projects_text">
-              <a href="https://medium.com/towards-data-science/missing-migrants-24254bc82474">
+              <a href="https://public.tableau.com/profile/john.loper#!/vizhome/CitiBike_15832919289460/Story1">
+                <h4>Citibike Analysis</h4>
+              </a>
+              <a href="https://github.com/L0per/citi-bike">
+                <p>Github</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 viz webdev all grid-item">
+          <div class="projects_item">
+            <img class="img-fluid w-100" src="img/gallery/belly_button_dashboard.PNG" alt="" />
+            <div class="projects_text">
+              <a href="https://l0per.github.io/belly-button-bugs/">
+                <h4>Belly Button Dashboard</h4>
+              <a href="https://github.com/L0per/belly-button-bugs">
+                <p>Github</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 viz webdev all grid-item">
+          <div class="projects_item">
+            <img class="img-fluid w-100" src="img/gallery/weather_analysis.PNG" alt="" />
+            <div class="projects_text">
+              <a href="https://l0per.github.io/weather-analysis-design/">
+                <h4>Weather Analysis</h4>
+              </a>
+              <a href="https://github.com/L0per/weather-analysis-design">
+                <p>Github</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 viz all grid-item">
+          <div class="projects_item">
+            <img class="img-fluid w-100" src="img/gallery/responsive_census.png" alt="" />
+            <div class="projects_text"> 
+              <a href="https://l0per.github.io/responsive-census-chart/">
                 <h4>
-                  What happened to the missing migrants and who are they
+                  Health, Age, and Income
                 </h4>
               </a>
-              <p>(Made in Carto & Odyssey.js, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/nyt_bestseller.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/judge-a-nyt-bestseller-by-its-cover-4db84d76825d">
-                <h4>Judge a NYT Bestseller by its Cover</h4>
+              <a href="https://github.com/L0per/responsive-census-chart">
+                <p>Github</p>
               </a>
-              <p>(Made in R, 2017)</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
+
+        <div class="col-lg-3 col-sm-6 webdev all grid-item">
           <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/recipe_nutrient.png" alt="" />
+            <img class="img-fluid w-100" src="img/gallery/ufo_sightings.PNG" alt="" />
             <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/searching-for-the-secret-ingredient-of-good-recipes-205d4537f11e">
-                <h4>How healthy is the meal: an analysis of recipe data</h4>
+              <a href="https://l0per.github.io/ufo-sightings/">
+                <h4>UFO Sightings Tracker</h4>
               </a>
-              <p>(Made in R, 2017)</p>
+              <a href="https://github.com/L0per/ufo-sightings">
+                <p>Github</p>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
+
+        <div class="col-lg-3 col-sm-6 webdev all grid-item">
           <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/google_trend_data.png" alt="" />
+            <img class="img-fluid w-100" src="img/gallery/mars_scraper.PNG" alt="" />
+            <div class="projects_text">
+              <a href="https://github.com/L0per/web_scraping_challenge">
+                <h4>Web Scraping Practice</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 viz all grid-item">
+          <div class="projects_item">
+            <img class="img-fluid w-100" src="img/gallery/trip_weather.png" alt="" />
             <div class="projects_text">
               <a
-                href="https://medium.com/towards-data-science/where-people-are-most-interested-in-data-visualization-and-data-science-16079ad706e0">
+                href="https://github.com/L0per/trip-weather">
                 <h4>
-                  Where People Are Most Interested in Data Science and Data
-                  Viz According to Google Trends
+                  Climate Analysis API
                 </h4>
               </a>
-              <p>(Made in Tableau, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/lego.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/the-color-history-of-lego-bricks-1e83ffea7b6d">
-                <h4>The Color History of Lego</h4>
-              </a>
-              <p>(Made in R, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/ted_cosmos.png" alt="" />
-            <div class="projects_text">
-              <a href="https://towardsdatascience.com/the-occupation-of-ted-speakers-4df1829c5ac7" title="" class="box-masonry-image with-hover-overlay
-							with-hover-icon">
-                <h4>The Hyphenated Occupation of TED Speakers</h4>
-              </a>
-              <p>(Made in R, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/superfluous_holiday.png" alt="" />
-            <div class="projects_text">
-              <a href="https://towardsdatascience.com/the-complete-guide-to-superfluous-holidays-7be26f0a86db">
-                <h4>The Complete Guide to Superfluous Holidays</h4>
-              </a>
-              <p>(Made in Tableau, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/education_by_tier.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/analyze-world-education-expenditure-c0f7abbf2a72">
-                <h4>World Education Expenditure</h4>
-              </a>
-              <p>(Made in R, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/migration.png" alt="" />
-            <div class="projects_text">
-              <a href="https://towardsdatascience.com/analyse-the-migration-of-scientific-researchers-5184a9500615">
-                <h4>The Flux of Academic Migration</h4>
-              </a>
-              <p>(Made in R, 2017)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/noodle.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/the-secret-life-of-instant-noodles-471ca3a34ef1">
-                <h4>The Secret Life of Instant Noodles</h4>
-              </a>
-              <p>(Made in Flourish, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/historicalinfluencer.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/visualizing-historical-influencers-fb768e787663">
-                <h4>Visualizing historical influencers</h4>
-              </a>
-              <p>(Made in Tableau, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/rice.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/where-does-rice-come-from-274e7dc2e531l">
-                <h4>Where does rice come from</h4>
-              </a>
-              <p>(Made in D3.js, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/culturalcapital.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/in-search-of-the-cultural-capitals-f6ddddd7f310">
-                <h4>In Search of Cultural Capitals</h4>
-              </a>
-              <p>(Made in Carto, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/cherryblossom.gif" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/mapping-cherry-blossom-2926a44fc9b1">
-                <h4>Where to View Cherry Blossom</h4>
-              </a>
-              <p>(Made in Tableau, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/lyricrepetitiveness.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/a-microscopic-view-of-song-repetitiveness-861141a4d65c">
-                <h4>A Microscopic View of Lyric Repetitiveness</h4>
-              </a>
-              <p>(Made in R, 2018)</p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6 col-sm-12 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/dataprivacy.png" alt="" />
+        <div class="col-lg-3 col-sm-6 skills all grid-item">
+          <div class="projects_item d-flex justify-content-center">
+            <img class="img-fluid w-75" src="img/gallery/python.png" alt="" />
             <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/the-chain-of-data-breach-incidents-2a98658c9db3">
-                <h4>Has Data Breaches Spiraled out of Control</h4>
+              <a href="https://www.python.org/">
+                <h4>
+                  Python
+                </h4>
               </a>
-              <p>(Made in D3.js, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-sm-12 viz grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/toughsports.png" alt="" />
-            <div class="projects_text">
-              <a href="https://medium.com/@yanhann10/which-sport-is-the-toughest-of-it-all-2749688fbfc3">
-                <h4>Which Sport is the Toughest of Them All</h4>
-              </a>
-              <p>(Made in R, 2018)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 ccode grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/creativecode/crossSection.png" alt="" />
-            <div class="projects_text">
-              <a href="portfolio-details.html">
-                <h4></h4>
-              </a>
-              <p>(Made in p5.js, 2019)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 ccode grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/creativecode/feathers.png" alt="" />
-            <div class="projects_text">
-              <a href="portfolio-details.html">
-                <h4></h4>
-              </a>
-              <p>(Made in p5.js, 2019)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 ccode grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/creativecode/rotatingfan.png" alt="" />
-            <div class="projects_text">
-              <a href="portfolio-details.html">
-                <h4></h4>
-              </a>
-              <p>(Made in p5.js, 2019)</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 ccode grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/creativecode/sound_flowers_spotify.jpg" alt="" />
-            <div class="projects_text">
-              <a href="portfolio-details.html">
-                <h4></h4>
-              </a>
-              <p>(Made in p5.js, 2019)</p>
+              <p>Pandas, Matplotlib, Plotly, sklearn, TensorFlow, SQL ORMs</p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6 ccode grid-item">
-          <div class="projects_item">
-            <img class="img-fluid w-100" src="img/gallery/creativecode/reversibletime.png" alt="" />
+        <div class="col-lg-3 col-sm-6 skills all grid-item">
+          <div class="projects_item d-flex justify-content-center">
+            <img class="img-fluid w-75" src="img/gallery/javascript.png" alt="" />
             <div class="projects_text">
-              <a href="portfolio-details.html">
-                <h4></h4>
+              <a href="https://www.javascript.com/">
+                <h4>
+                  Javascript
+                </h4>
               </a>
-              <p>(Made in p5.js, 2019)</p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-sm-6 ccode grid-item">
-          <div class="projects_item">
-            <video width="300" autoplay loop>
-              <source src="img/gallery/creativecode/make_waves_min.mp4" type="video/mp4">
-              video hidden
-            </video>
+        <div class="col-lg-3 col-sm-6 skills all grid-item">
+          <div class="projects_item d-flex justify-content-center">
+            <img class="img-fluid w-75" src="img/gallery/postgresql.png" alt="" />
             <div class="projects_text">
-              <a href="portfolio-details.html">
-                <h4></h4>
+              <a href="https://www.postgresql.org/">
+                <h4>
+                  PostgreSQL
+                </h4>
               </a>
-              <p>(Made in p5.js, 2019)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 skills all grid-item">
+          <div class="projects_item d-flex justify-content-center">
+            <img class="img-fluid w-75" src="img/gallery/tableau.svg" alt="" />
+            <div class="projects_text">
+              <a href="https://www.tableau.com/">
+                <h4>
+                  Tableau
+                </h4>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 skills all grid-item">
+          <div class="projects_item d-flex justify-content-center">
+            <img class="img-fluid w-75" src="img/gallery/html.png" alt="" />
+            <div class="projects_text">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                <h4>
+                  HTML
+                </h4>
+              </a>
             </div>
           </div>
         </div>
@@ -436,7 +308,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-between">
         <div class="col-lg-4 about-left">
-          <img class="img-fluid" src="img/profile.jpg" alt="" />
+          <img class="img-fluid" src="img/about-me-pic.jpg" alt="" />
         </div>
         <div class="col-lg-7 col-md-12 about-right">
           <div class="main-title text-left">
@@ -444,21 +316,19 @@
           </div>
           <div class="mb-50 wow fadeIn" data-wow-duration=".8s">
             <p>
-              I am a graduate student in data science at Duke University.
-              Previously I went to National University of Singapore and EPFL.
+              With 6+ years of academic and pharmaceutical biochemistry experience, my passion is analyzing and visualizing data in a
+              clear, yet beautiful way. Using popular programming languages and technologies, I enjoy aggregating, cleaning,
+              analyzing, and visualizing data.
             </p>
             <p>
-              Besides data science and data storytelling, I also like
-              contemporary art and travelling.
+              My goal is to answer and discover business questions with easily understood deliverables.
             </p>
             <p>
-              Having lived in China, Singapore, Switzerland & United States, I
-              understand English, Chinese and French.
+              I have worked with and led multiple teams - local and remote - that have met established deadlines while clearly
+              communicating project status.
             </p>
             <p>
-              I have given talks and workshops such as Introduction To
-              Visualization for Women Who Code and Drawing with Data Workshop
-              at Airbnb APAC.
+              When I'm not coding or learning, you'll usually find me climbing in the beautiful Sierra Nevada mountains!
             </p>
           </div>
         </div>
@@ -468,7 +338,7 @@
   <!--================ End About Area =================-->
 
   <!--================ Start Footer Area =================-->
-  <footer class="footer_area section_gap" id="contact-me">
+  <footer class="footer_area section_gap_footer" id="contact-me">
     <div class="container">
       <div class="row footer_inner justify-content-center">
         <div class="col-lg-6 text-center">
@@ -478,13 +348,10 @@
             </div>
             <ul class="list">
               <li>
-                <a href="https://www.linkedin.com/in/hannahyan/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/john-loper/"><i class="fa fa-linkedin"></i></a>
               </li>
               <li>
-                <a href="https://twitter.com/hannahyan"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://medium.com/@yanhann10"><i class="fa fa-medium"></i></a>
+                <a href="https://github.com/L0per"><i class="fa fa-github"></i></a>
               </li>
             </ul>
           </aside>

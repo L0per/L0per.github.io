@@ -94,6 +94,10 @@ button:focus {
   padding: 120px 0;
 }
 
+.section_gap_footer {
+  padding: 50px 0;
+}
+
 @media (max-width: 991px) {
   .section_gap {
     padding: 80px 0;
@@ -232,6 +236,7 @@ button:focus {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 .header_area {
   position: absolute;
   width: 100%;
@@ -693,10 +698,25 @@ button:focus {
   vertical-align: middle;
   cursor: pointer;
 }
+
 .projects_item .projects_text p {
-  margin-bottom: 0px;
-  font-size: 15px;
+  margin: 0.5rem auto 0px auto;
+  font-size: 12px;
   color: #fff;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.projects_item .projects_text p:hover {
+  margin: 0.5rem auto 0px auto;
+  font-size: 12px;
+  color: #ffd200;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .projects_item:hover:before {
@@ -3853,7 +3873,7 @@ h6 {
 
 .social_widget .f_title h4 {
   font-size: 21px;
-  margin: 40px 0 20px;
+  margin: 0px 0 20px;
   color: #000;
 }
 
@@ -3888,7 +3908,8 @@ h6 {
 }
 
 .copyright {
-  margin-top: 40px;
+  margin-top: 200px;
+  margin-bottom: 0;
 }
 
 .copyright p {
